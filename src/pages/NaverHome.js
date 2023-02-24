@@ -1,19 +1,21 @@
 import React from "react";
-import "./naver-home.css";
+import styles from "./naver-home.module.css";
 import { Header } from "../experiences/Header";
 import { Navigation } from "../experiences/Navigation";
 import { Rightrail } from "../experiences/Rightrail";
 import { MainContent } from "../experiences/MainContent";
+import { Footer } from "../experiences/Footer";
 
 export const Naver = () => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Header />
       <Navigation />
-      <div className="main-container">
+      <div className={styles.mainContainer}>
         <MainContent />
         <Rightrail />
       </div>
+      <Footer />
     </div>
   );
 };
