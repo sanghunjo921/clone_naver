@@ -1,4 +1,66 @@
 .container {
-  height: 232px;
-  background-color: tomato;
+  height: var(--header-height);
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  border-radius: 50%;
+  height: var(--logo-size);
+  width: var(--logo-size);
+}
+
+.title {
+  text-transform: uppercase;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.searchBox {
+  height: 60px;
+  width: var(--search-box-width);
+  border-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.searchBox input {
+  border: 0;
+  width: 100%;
+  outline: none;
+}
+
+.searchBox div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox div i {
+  margin: 5px;
+}
+
+.searchBox div:nth-of-type(3) {
+  background-color: var(--primary-color);
+  width: 80px;
+  color: white;
+}
+
+.messageBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+}
+.messageBox div {
+  margin: 5px;
+}
+.messageBox div:nth-of-type(1) {
+  display: flex;
 }
