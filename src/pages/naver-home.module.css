@@ -1,0 +1,11 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #d2d2d2;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-areas: "main rail";
+  grid-template-columns: 1fr 348px;
+}

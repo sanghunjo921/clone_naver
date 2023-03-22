@@ -1,0 +1,31 @@
+.container {
+  background-color: darkgray;
+  margin: 0 auto;
+}
+
+.delimeter {
+  width: 100%;
+  height: 1px;
+  background-color: #e4e8eb;
+  margin-top: 18px;
+  margin-bottom: 42px;
+  position: relative;
+}
+
+.delimeter button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 3px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 0;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.delimeter button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
